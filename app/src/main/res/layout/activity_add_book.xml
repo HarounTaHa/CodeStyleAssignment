@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bac"
+    tools:context=".AddBook">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#AFFF69"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:text="اضافة كتاب جديد"
+            android:textColor="#000"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/author_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="اسم المؤلف"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/xx"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/xx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="18dp"
+        android:text="اسم المؤلف:"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/name_book"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/x" />
+
+    <EditText
+
+        android:id="@+id/name_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="اسم الكتاب"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/x"
+        app:layout_constraintEnd_toEndOf="@+id/author_book" />
+
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="18dp"
+        android:text="اسم الكتاب:"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/name_book"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/description_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="وصف عن الكتاب .."
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/xxx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/num_pages" />
+
+    <TextView
+        android:id="@+id/xxx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="28dp"
+        android:text="وصف الكتاب:"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/description_book"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/author_book" />
+
+    <EditText
+        android:id="@+id/num_pages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/xxxx"
+        app:layout_constraintEnd_toEndOf="@+id/author_book" />
+
+    <EditText
+        android:id="@+id/year_publishing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/xxxxx"
+        app:layout_constraintEnd_toEndOf="@+id/num_pages" />
+
+    <TextView
+        android:id="@+id/xxxx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="28dp"
+        android:text="عدد الصفحات:"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/num_pages"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_book" />
+
+    <TextView
+        android:id="@+id/xxxxx"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="40dp"
+        android:text="سنة الاصدار:"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/year_publishing"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xxxx" />
+
+    <Button
+        android:id="@+id/add_new_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="8dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xxxxx" />
+</android.support.constraint.ConstraintLayout>
